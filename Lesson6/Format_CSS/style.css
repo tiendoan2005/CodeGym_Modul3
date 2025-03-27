@@ -1,0 +1,19 @@
+h1{
+    font-family: Times New Roman;
+    margin: 5px;
+}
+p{
+    text-indent: 50px;
+    text-align: justify;
+    font-family: sans-serif;
+}
+#header{
+    text-indent: 0px;
+    margin-top: -5px;
+}
+
+.content{
+    color: #453f90;
+    font-size: 9px;
+    vertical-align: top;
+}
