@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    width: 100%;
+    height: 10vh;
+    background: #f3f3f3;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#header img {
+    width: 45px;
+    height: 45px;
+    float: left;
+    margin: 5px;
+    border-radius: 50%;
+    box-shadow: #8f8f8f 2px 2px 2px;
+}
+
+#header h1 {
+    display: inline-block;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+
+#navigation {
+    width: 100%;
+    height: 5vh;
+    background: #f3f3f3;
+    margin: 5px 0;
+    position: relative;
+    top: 10vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 999;
+}
+
+#navigation a {
+    text-decoration: none;
+    padding: 10px;
+    color: #000000;
+}
+
+#navigation a:hover {
+    background: #8f8f8f;
+    color: white;
+}
+
+#navigation .link table {
+    border-collapse: collapse;
+}
+
+#navigation .link table td {
+    border: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+    /*border-right: none;*/
+}
+
+#sidebar {
+    width: 25%;
+    height: 76vh;
+    background: #f3f3f3;
+    float: left;
+    margin-bottom: 5px;
+    position: relative;
+    top: 10vh;
+    justify-content: center;
+    display: flex;
+}
+
+.list-music li {
+    list-style: none;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.list-music li:hover {
+    background: #8f8f8f;
+}
+
+.list-music a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.list-music a:hover {
+    color: #ffffff;
+}
+
+#content {
+    width: 75%;
+    height: 76vh;
+    background: #ffffff;
+    float: left;
+    margin-bottom: 5px;
+    position: relative;
+    justify-content: center;
+    display: flex;
+}
+
+#content .music {
+    position: absolute;
+    top: 100px;
+    padding: 30px;
+    flex-direction: column;
+}
+
+#footer {
+    width: 100%;
+    height: 7vh;
+    background: #f3f3f3;
+    clear: both;
+    position: relative;
+    top: 10vh;
+}
+#footer p {
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .music iframe {
+        width: 300px;
+        height: 150px;
+    }
+}
