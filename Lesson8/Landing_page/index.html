@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Navigation</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <!-- Tab navigation -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#home" data-toggle="tab">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#profile" data-toggle="tab">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#messages" data-toggle="tab">Messages</a>
+        </li>
+    </ul>
+
+    <!-- Tab content -->
+    <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+            <h3>Home Tab Content</h3>
+            <p>Welcome to the Home tab!</p>
+        </div>
+        <div class="tab-pane container fade" id="profile">
+            <h3>Profile Tab Content</h3>
+            <p>This is the Profile tab.</p>
+        </div>
+        <div class="tab-pane container fade" id="messages">
+            <h3>Messages Tab Content</h3>
+            <p>Here are your messages.</p>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

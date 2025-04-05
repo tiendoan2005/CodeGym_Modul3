@@ -1,0 +1,26 @@
+body{
+    font-family: "Times New Roman", Times, serif;
+}
+div.gallery{
+    border: 2px solid #000;
+}
+
+div.gallery:hover{
+    border: 2px solid #8f8f8f;
+}
+/*@media screen and (max-width: 500px){*/
+/*    .gallery{*/
+/*        margin: 10px;*/
+/*    }*/
+/*}*/
+@media screen and (min-width: 500px){
+    .gallery{
+        margin: 6px;
+    }
+    .gallery img{
+        width: 100%;
+    }
+}
+.gallery p{
+    padding: 10px;
+}
