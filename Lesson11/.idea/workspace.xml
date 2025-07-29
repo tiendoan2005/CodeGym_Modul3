@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f29b02b-4e82-4355-91d5-b664d88efa44" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/controller/BookTicketServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/controller/ConfirmBookingServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/controller/ListMovieServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/controller/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/controller/LogoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/controller/MovieListServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/controller/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/dao/GeneralDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/dao/GeneralTicketDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/dao/GeneralUserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/dao/MovieDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/dao/TicketDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/dao/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/model/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/model/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/java/util/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/Jsp_login_register/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/Jsp_login_register/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/images/movie1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/images/movie2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/images/movie3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/jsp_movie/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/jsp_movie/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/jsp_movie/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/jsp_movie/form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/jsp_movie/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/ticket/book_ticket.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Case-study-modul3/src/main/webapp/ticket/booking_success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/controller/ShoppingCartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/model/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/service/DBConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/service/GeneralDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/service/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/java/service/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/webapp/cart/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/webapp/product/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/webapp/product/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectBase/TestProjectBase/src/main/webapp/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lesson10/Calculator/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lesson10/Calculator/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2zs4raKZF8dot6Ep2xi36ZtkePB" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Codegym/Modul3/Lesson11",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Lesson11" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Lesson11" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.218" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.218" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f29b02b-4e82-4355-91d5-b664d88efa44" name="Changes" comment="" />
+      <created>1752506646031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1752506646031</updated>
+      <workItem from="1752506647237" duration="338000" />
+      <workItem from="1752507251640" duration="60000" />
+      <workItem from="1752507330825" duration="132000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
