@@ -100,9 +100,9 @@ public class MovieListServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        int id = Integer.parseInt(req.getParameter("id"));  // Lấy id từ tham số URL
-        Movie movie = movieDAO.findById(id);  // Lấy thông tin phim từ database
-        req.setAttribute("movie", movie);  // Đưa thông tin phim vào request để hiển thị trên form
+        int id = Integer.parseInt(req.getParameter("id"));
+        Movie movie = movieDAO.findById(id);
+        req.setAttribute("movie", movie);
         RequestDispatcher dispatcher = req.getRequestDispatcher("jsp_movie/edit.jsp");
         dispatcher.forward(req, resp);
     }
@@ -118,14 +118,14 @@ public class MovieListServlet extends HttpServlet {
         LocalDate startDate = LocalDate.parse(req.getParameter("startDate"));
         LocalDate endDate = LocalDate.parse(req.getParameter("endDate"));
         Movie movie = new Movie(id, title, genre, duration, description, startDate, endDate);
-        movieDAO.update(movie);         // Cập nhật MySQL
-        resp.sendRedirect("movies");    // Quay lại danh sách
+        movieDAO.update(movie);
+        resp.sendRedirect("movies");
     }
 
     private void showDeleteMovie(HttpServletRequest req, HttpServletResponse resp)
             throws SQLException, IOException, ServletException {
-        List<Movie> movieList = movieDAO.getAllMovies(); // Lấy toàn bộ danh sách phim
-        req.setAttribute("movieList", movieList);        // Gửi qua delete.jsp
+        List<Movie> movieList = movieDAO.getAllMovies();
+        req.setAttribute("movieList", movieList);
         RequestDispatcher dispatcher = req.getRequestDispatcher("jsp_movie/delete.jsp");
         dispatcher.forward(req, resp);
     }
