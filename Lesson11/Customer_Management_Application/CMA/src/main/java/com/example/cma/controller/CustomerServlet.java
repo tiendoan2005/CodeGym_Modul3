@@ -165,7 +165,7 @@ public class CustomerServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         int id = Integer.parseInt(req.getParameter("id"));
-        Customer customer = this.customerService.findById(id);
+        Customer customer = this.customerService.findById (id);
         RequestDispatcher dispatcher;
         if (customer == null) {
             dispatcher = req.getRequestDispatcher("/error-404.jsp");

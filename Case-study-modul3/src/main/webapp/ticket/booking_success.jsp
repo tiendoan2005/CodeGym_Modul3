@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Thông báo</title>
-    <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light d-flex justify-content-center align-items-center vh-100">
@@ -14,7 +13,6 @@
     <a href="movies" class="btn btn-primary">Quay lại danh sách phim</a>
 </div>
 
-<!-- Bootstrap JS Bundle (nếu cần cho tương tác JS) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

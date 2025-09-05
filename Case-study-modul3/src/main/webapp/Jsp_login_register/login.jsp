@@ -3,7 +3,6 @@
 <html>
 <head>
     <title>Đăng nhập</title>
-    <!-- Link Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -21,7 +20,6 @@
         <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
     </form>
 
-    <!-- Hiển thị lỗi nếu có -->
     <c:if test="${not empty error}">
         <p class="mt-3 text-danger text-center">${error}</p>
     </c:if>
@@ -31,7 +29,6 @@
     </p>
 </div>
 
-<!-- Link Bootstrap JS + Popper (nếu cần) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -39,7 +39,7 @@
         }
 
         .movie-card {
-            flex: 1; /* Kéo dài chiều cao */
+            flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -51,7 +51,6 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.2s ease-in-out;
         }
-
 
         .movie-card:hover {
             transform: scale(1.02);
@@ -80,6 +79,7 @@
             object-fit: cover;
             border-radius: 10px;
         }
+
         .row {
             display: flex;
             flex-wrap: wrap;
@@ -89,6 +89,47 @@
             display: flex;
         }
 
+        /* 🔹 Tabs custom */
+        .nav-underline-custom {
+            gap: 30px;
+        }
+
+        .nav-link-custom {
+            position: relative;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #343a40;
+            text-decoration: none;
+            padding-bottom: 5px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link-custom::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 0;
+            background-color: #0d6efd;
+            transition: width 0.3s ease-in-out;
+        }
+
+        .nav-link-custom:hover {
+            color: #0d6efd;
+        }
+
+        .nav-link-custom:hover::after {
+            width: 100%;
+        }
+
+        .nav-link-custom.active {
+            color: #0d6efd;
+        }
+
+        .nav-link-custom.active::after {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -96,7 +137,9 @@
 <!-- Header -->
 <header class="fixed-header">
     <div class="container py-3 d-flex justify-content-between align-items-center">
-        <h1 class="h5 mb-0">🎬 Hệ thống quản lý phim</h1>
+        <h1 class="h5 mb-0">
+            <a href="movies?action=list" class="text-white text-decoration-none">🎬 Hệ thống quản lý phim</a>
+        </h1>
         <nav>
             <ul class="nav">
                 <c:choose>
@@ -143,8 +186,14 @@
         </button>
     </div>
 
+    <!-- 🔹 Tabs -->
+    <div class="d-flex justify-content-center mb-4 nav nav-underline-custom">
+        <a href="#" class="nav-link-custom">Phim sắp chiếu</a>
+        <a href="#" class="nav-link-custom active">Phim đang chiếu</a>
+        <a href="#" class="nav-link-custom">Suất chiếu đặc biệt</a>
+    </div>
+
     <!-- Movie List -->
-    <h2 class="mb-4 text-center">📋 Danh sách phim</h2>
     <div class="row">
         <c:forEach var="movie" items="${movieList}">
             <div class="col-md-4">
@@ -158,7 +207,6 @@
                         <a href="book-ticket?movieId=${movie.id}" class="btn btn-primary">🎟️ Đặt vé</a>
                     </div>
                 </div>
-
             </div>
         </c:forEach>
     </div>
@@ -167,11 +215,22 @@
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
-        <p class="mb-0">© 2025 Hệ thống quản lý phim. Được phát triển bởi bạn 💻.</p>
+        <p class="mb-0">2025 Hệ thống quản lý phim.</p>
     </div>
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS xử lý click tab -->
+<script>
+    document.querySelectorAll('.nav-link-custom').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelectorAll('.nav-link-custom').forEach(el => el.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+</script>
 </body>
 </html>

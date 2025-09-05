@@ -24,18 +24,15 @@ public class BookTicketServlet extends HttpServlet {
         Movie movie = movieDAO.findById(Integer.parseInt(movieId));
         request.setAttribute("movie", movie);
 
-        // ✅ Lấy LocalDate trực tiếp vì Movie đã dùng LocalDate
         LocalDate startLocal = movie.getStartDate();
         LocalDate endLocal = movie.getEndDate();
 
         List<String> availableDates = new ArrayList<>();
         for (LocalDate date = startLocal; !date.isAfter(endLocal); date = date.plusDays(1)) {
-            availableDates.add(date.toString()); // định dạng yyyy-MM-dd
+            availableDates.add(date.toString());
         }
-
         request.setAttribute("availableDates", availableDates);
 
-        // Gửi đến JSP
         request.getRequestDispatcher("ticket/book_ticket.jsp").forward(request, response);
     }
 }

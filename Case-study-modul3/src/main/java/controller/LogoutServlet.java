@@ -11,12 +11,10 @@ import java.io.IOException;
 @WebServlet(name = "LogoutServlet", urlPatterns = "/logout")
 public class LogoutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // Xoá session đăng nhập
         HttpSession session = request.getSession(false);
         if (session != null) {
             session.invalidate();
         }
-        // Redirect về list.jsp hoặc controller list
         response.sendRedirect("list");
     }
 }
