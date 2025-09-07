@@ -64,6 +64,8 @@ public class MovieListServlet extends HttpServlet {
                     break;
                 case "delete":
                     deleteMovieConfirmed(req, resp);
+                case "find":
+                    findMovie(req, resp);
                     break;
             }
         } catch (Exception e) {
@@ -135,5 +137,17 @@ public class MovieListServlet extends HttpServlet {
         int id = Integer.parseInt(req.getParameter("id"));
         movieDAO.delete(id);
         resp.sendRedirect("movies");
+    }
+
+    private void findMovie(HttpServletRequest req, HttpServletResponse resp) throws SQLException, IOException, ServletException {
+        String keyword = req.getParameter("keyword");
+        List<Movie> result = movieDAO.findByTitle(keyword);
+        if (result.isEmpty()) {
+            req.setAttribute("message", "Không có phim trùng từ khóa: " + keyword);
+        }else{
+            req.setAttribute("movieList", result);
+        }
+        RequestDispatcher dispatcher = req.getRequestDispatcher("jsp_movie/list.jsp");
+        dispatcher.forward(req, resp);
     }
 }
